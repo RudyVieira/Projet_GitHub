@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CinéFlix - Accueil</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<nav>
+					<h1><a href="#">CinéFlix</a></h1>
+					<input
+						type="text"
+						id="search-bar"
+						placeholder="Rechercher un film..."
+					/>
+					<div class="user-options">
+						<button id="favorites">Liste de favoris</button>
+						<select id="language">
+							<option value="fr">Français</option>
+							<option value="en">English</option>
+						</select>
+						<button id="login">Se connecter</button>
+					</div>
+					<ul class="categories">
+						<li><a href="#fantastique">Fantastique</a></li>
+						<li><a href="#comedy">Comédie</a></li>
+						<li><a href="#sci-fi">Science Fiction</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section id="add-movie">
+				<h2><a href="#">Ajouter un Film</a></h2>
+			</section>
+
+			<section id="current-movies">
+				<h2><a href="#">Films à l'Affiche</a></h2>
+				<div class="movie-list">
+					<!-- Exemple de film -->
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img6.acsta.net/c_310_420/img/f5/f2/f5f2447c4246e42eb3e69040605d7cf1.jpg"
+								alt=""
+						/></a>
+						<h3><a href="#">Mufasa : Le Roi Lion</a></h3>
+						<p class="text-limited">
+							Rafiki raconte à la jeune lionne Kiara - la fille de Simba et Nala
+							– la légende de Mufasa. Il est aidé en cela par Timon et Pumbaa.
+							Relatée sous forme de flashbacks, l'histoire de Mufasa est celle
+							d’un lionceau orphelin qui, un jour, fait la connaissance du
+							sympathique Taka, héritier d'une lignée royale.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img2.acsta.net/c_310_420/img/85/e7/85e77c51c172da4aec13679210295a11.jpg"
+								alt=""
+						/></a>
+						<h3><a href="#">Sonic 3 - le film</a></h3>
+						<p class="text-limited">
+							Sonic, Knuckles et Tails se retrouvent face à un nouvel
+							adversaire, Shadow, mystérieux et puissant ennemi aux pouvoirs
+							inédits. Dépassée sur tous les plans, la Team Sonic va devoir
+							former une alliance improbable pour tenter d’arrêter Shadow et
+							protéger notre planète.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img4.acsta.net/c_310_420/img/9e/c9/9ec9a076d8516b78e1923dd76806f13e.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">Vaiana 2</a></h3>
+						<p class="text-limited">
+							Après avoir reçu une invitation inattendue de ses ancêtres, Vaiana
+							entreprend un périple qui la conduira jusqu’aux eaux dangereuses
+							situées aux confins des mers des îles du Pacifique. Elle y vivra
+							des péripéties comme jamais vécues auparavant.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img3.acsta.net/c_310_420/img/07/21/072124435e88c6c5b2a183198e0137fb.jpeg"
+								alt=""
+						/></a>
+
+						<h3>
+							<a href="#">Flow, le chat qui n’avait plus peur de l’eau</a>
+						</h3>
+						<p class="text-limited">
+							Un chat se réveille dans un univers envahi par l’eau où toute vie
+							humaine semble avoir disparu. Il trouve refuge sur un bateau avec
+							un groupe d’autres animaux. Mais s’entendre avec eux s’avère un
+							défi encore plus grand que de surmonter sa peur de l'eau ! Tous
+							devront désormais apprendre à surmonter leurs différences et à
+							s’adapter au nouveau monde qui s’impose à eux.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="recommendations">
+				<h2>Recommandations</h2>
+				<div class="movie-list">
+					<!-- Exemple de film -->
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/18/66/15/78/19254683.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">La Ligne verte</a></h3>
+						<p class="text-limited">
+							Paul Edgecomb, pensionnaire centenaire d'une maison de retraite,
+							est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold
+							Mountain en 1935, il était chargé de veiller au bon déroulement
+							des exécutions capitales en s’efforçant d'adoucir les derniers
+							moments des condamnés. Parmi eux se trouvait un colosse du nom de
+							John Coffey, accusé du viol et du meurtre de deux fillettes.
+							Intrigué par cet homme candide et timide aux dons magiques,
+							Edgecomb va tisser avec lui des liens très forts.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/63/30/68/18686447.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">Les Evadés</a></h3>
+						<p class="text-limited">
+							Condamné à perpétuité pour le meurtre de sa femme et de son amant,
+							un banquier s'accroche à l'espoir et se lie d'amitié avec un autre
+							détenu pour survivre en prison.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img5.acsta.net/c_310_420/img/09/bb/09bbdc53475ebb6c3f5fc2c9c58d341b.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">Il était une fois dans l'Ouest</a></h3>
+						<p class="text-limited">
+							Alors qu'il prépare une fête pour sa femme, Bet McBain est tué
+							avec ses trois enfants. Jill McBain hérite des terres de son mari,
+							convoitées par Morton, le commanditaire du crime, car elles
+							prennent de la valeur avec l'arrivée imminente du chemin de fer.
+							Cependant, les soupçons se portent sur un aventurier, Cheyenne...
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img5.acsta.net/c_310_420/pictures/14/09/24/12/08/158828.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">Interstellar</a></h3>
+						<p class="text-limited">
+							Le film raconte les aventures d’un groupe d’explorateurs qui
+							utilisent une faille récemment découverte dans l’espace-temps afin
+							de repousser les limites humaines et partir à la conquête des
+							distances astronomiques dans un voyage interstellaire.
+						</p>
+						<div class="rating">
+							<label for="rating">Note :</label>
+							<input type="number" id="rating" min="0" max="5" step="1" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<div class="social-media">
+					<a href="#">Facebook</a>
+					<a href="#">Twitter</a>
+					<a href="#">Instagram</a>
+				</div>
+				<div class="legal">
+					<a href="#">Conditions d'utilisation</a>
+					<a href="#">Mentions légales</a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const maxCharacters = 240; // Nombre maximum de caractères
+			const elements = document.querySelectorAll(".text-limited"); // Cibler tous les éléments avec la classe
+
+			elements.forEach((element) => {
+				if (element.textContent.length > maxCharacters) {
+					element.textContent =
+						element.textContent.slice(0, maxCharacters) + "..."; // Tronquer et ajouter '...'
+				}
+			});
+		</script>
+	</body>
+</html>
