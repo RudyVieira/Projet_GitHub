@@ -32,4 +32,89 @@
 				</nav>
 			</div>
 		</header>
+
+		<main>
+			<section id="current-movies">
+				<h2><a href="#">Films à l'Affiche</a></h2>
+				<div class="movie-list">
+					<!-- Exemple de film -->
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img6.acsta.net/c_310_420/img/f5/f2/f5f2447c4246e42eb3e69040605d7cf1.jpg"
+								alt=""
+						/></a>
+						<h3><a href="#">Mufasa : Le Roi Lion</a></h3>
+						<p class="text-limited">
+							Rafiki raconte à la jeune lionne Kiara - la fille de Simba et Nala
+							– la légende de Mufasa. Il est aidé en cela par Timon et Pumbaa.
+							Relatée sous forme de flashbacks, l'histoire de Mufasa est celle
+							d’un lionceau orphelin qui, un jour, fait la connaissance du
+							sympathique Taka, héritier d'une lignée royale.
+						</p>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img2.acsta.net/c_310_420/img/85/e7/85e77c51c172da4aec13679210295a11.jpg"
+								alt=""
+						/></a>
+						<h3><a href="#">Sonic 3 - le film</a></h3>
+						<p class="text-limited">
+							Sonic, Knuckles et Tails se retrouvent face à un nouvel
+							adversaire, Shadow, mystérieux et puissant ennemi aux pouvoirs
+							inédits. Dépassée sur tous les plans, la Team Sonic va devoir
+							former une alliance improbable pour tenter d’arrêter Shadow et
+							protéger notre planète.
+						</p>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img4.acsta.net/c_310_420/img/9e/c9/9ec9a076d8516b78e1923dd76806f13e.jpg"
+								alt=""
+						/></a>
+
+						<h3><a href="#">Vaiana 2</a></h3>
+						<p class="text-limited">
+							Après avoir reçu une invitation inattendue de ses ancêtres, Vaiana
+							entreprend un périple qui la conduira jusqu’aux eaux dangereuses
+							situées aux confins des mers des îles du Pacifique. Elle y vivra
+							des péripéties comme jamais vécues auparavant.
+						</p>
+					</div>
+					<div class="movie">
+						<a href="#"
+							><img
+								src="https://fr.web.img3.acsta.net/c_310_420/img/07/21/072124435e88c6c5b2a183198e0137fb.jpeg"
+								alt=""
+						/></a>
+
+						<h3>
+							<a href="#">Flow, le chat qui n’avait plus peur de l’eau</a>
+						</h3>
+						<p class="text-limited">
+							Un chat se réveille dans un univers envahi par l’eau où toute vie
+							humaine semble avoir disparu. Il trouve refuge sur un bateau avec
+							un groupe d’autres animaux. Mais s’entendre avec eux s’avère un
+							défi encore plus grand que de surmonter sa peur de l'eau ! Tous
+							devront désormais apprendre à surmonter leurs différences et à
+							s’adapter au nouveau monde qui s’impose à eux.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script>
+			const maxCharacters = 240; // Nombre maximum de caractères
+			const elements = document.querySelectorAll(".text-limited"); // Cibler tous les éléments avec la classe
+
+			elements.forEach((element) => {
+				if (element.textContent.length > maxCharacters) {
+					element.textContent =
+						element.textContent.slice(0, maxCharacters) + "..."; // Tronquer et ajouter '...'
+				}
+			});
+		</script>
+	</body>
 </html>
