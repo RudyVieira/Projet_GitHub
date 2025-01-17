@@ -22,4 +22,4 @@ Ce site offre une plateforme intuitive pour découvrir des films, donner des not
 4. Faites une Pull Request avec une description détaillée.
 
 ## Code de Conduite
-Nous suivons un [Code de Conduite](CODE_OF_CONDUCT.md) pour maintenir un environnement de collaboration respectueux.
+Nous suivons un [Code de Conduite](Code_of_Conduct.md) pour maintenir un environnement de collaboration respectueux.
