@@ -1,0 +1,32 @@
+name: Lint Code
+
+on:
+  push:
+    branches:
+      - main      # Exécute le workflow sur les push vers 'main'
+  pull_request:
+    branches:
+      - main      # Exécute le workflow sur les pull requests vers 'main'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout du code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Installation Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      # Installation des dépendances
+      - name: Install dependencies
+        run: npm install
+
+      # Exécution du linter avec ESLint script prédéfini dans package.json
+      - name: Run ESLint
+        run: npm run lint

@@ -1,0 +1,13 @@
+# Fichiers et répertoires générés automatiquement
+node_modules/
+
+# Fichiers de configuration
+.env
+.env.local
+
+# Fichiers de build
+build/
+
+# Fichiers de dépendance de package manager
+package-lock.json
+
