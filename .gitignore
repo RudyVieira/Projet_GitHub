@@ -1,0 +1,58 @@
+# Node.js modules (si vous utilisez des outils comme npm ou yarn)
+node_modules/
+
+# Fichiers générés automatiquement par le système ou les éditeurs
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Configuration des éditeurs (VS Code, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dossiers de build (si applicable)
+dist/
+build/
+
+# Fichiers temporaires ou spécifiques au système
+*.swp
+*.bak
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# Images générées ou compressées
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.webp
+
+# CSS ou JS générés par des outils de build
+*.min.css
+*.min.js
+
+# Fichiers environnement (variables sensibles)
+.env
+.env.local
+.env.*.local
+
+# Documentation générée (par exemple, si vous utilisez JSDoc ou similaire)
+docs/
+
+# Dépendances front-end (si applicable)
+bower_components/
+
+# Fichiers de dépendance de package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Autres fichiers spécifiques au projet (ajustez selon vos besoins)
+__pycache__/
+coverage/
